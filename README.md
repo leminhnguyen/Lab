@@ -1,5 +1,18 @@
 # JavaFx Guidlines
 
+## Table Of Contents
+  - [1. Tổng quan về JavaFx](#1-tổng-quan-về-javafx)
+  - [2. Cài đặt](#2-cài-đặt)
+    - [2.1 Download Java 14](#21-download-java-14)
+    - [2.2 Download Eclipse](#22-download-eclipse)
+    - [2.3 Download Javafx SDK:](#23-download-javafx-sdk)
+  - [3. Làm quen với JavaFx](#3-làm-quen-với-javafx)
+    - [3.1 Các thành phần cơ sở của JavaFx](#31-các-thành-phần-cơ-sở-của-javafx)
+    - [3.2 Các loại packages của JavaFx](#32-các-loại-packages-của-javafx)
+    - [3.3 Các loại đối tượng cơ bản trong JavaFx](#33-các-loại-đối-tượng-cơ-bản-trong-javafx)
+  - [4. Tạo chương trình JavaFx HelloWorld](#4-tạo-chương-trình-javafx-helloworld)
+
+
 ## 1. Tổng quan về JavaFx
 - > JavaFX is a set of graphics and media packages that enables developers to design, create, test, debug, and deploy rich client applications that operate consistently across diverse platforms.
 
@@ -14,7 +27,7 @@
 - Download Eclipse tại: [download eclipse 2020-9](https://www.eclipse.org/downloads/packages/release/2020-09/r)
 - Lưu ý download bản `Eclipse IDE for Enterprise Java Developers` để có đầy đủ các tính năng
   
-  ![](images/java-dev.png)
+  ![](2020-10-16-15-02-30.png)
   
 ### 2.3 Download Javafx SDK:
 -  Bản mới nhất hiện tại là version 15, có thể download tại [download link](https://gluonhq.com/products/javafx/)
