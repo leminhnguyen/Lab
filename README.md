@@ -5,9 +5,9 @@
   - [2. Cài đặt](#2-cài-đặt)
     - [2.1 Download Java 14](#21-download-java-14)
     - [2.2 Download Eclipse](#22-download-eclipse)
-    - [2.3 Download Javafx SDK:](#23-download-javafx-sdk)
+    - [2.3 Download Javafx SDK](#23-download-javafx-sdk)
   - [3. Làm quen với JavaFx](#3-làm-quen-với-javafx)
-    - [3.1 Các thành phần cơ sở của JavaFx](#31-các-thành-phần-cơ-sở-của-javafx)
+    - [3.1 Các thuật ngữ sử dụng của JavaFx](#31-các-thuật-ngữ-sử-dụng-của-javafx)
     - [3.2 Các loại packages của JavaFx](#32-các-loại-packages-của-javafx)
     - [3.3 Các loại đối tượng cơ bản trong JavaFx](#33-các-loại-đối-tượng-cơ-bản-trong-javafx)
   - [4. Tạo chương trình JavaFx HelloWorld](#4-tạo-chương-trình-javafx-helloworld)
@@ -29,7 +29,7 @@
   
   ![](2020-10-16-15-02-30.png)
   
-### 2.3 Download Javafx SDK:
+### 2.3 Download Javafx SDK
 -  Bản mới nhất hiện tại là version 15, có thể download tại [download link](https://gluonhq.com/products/javafx/)
 -  Lưu ý cài các bản có chữ `SDK` ở cuối của cột `Product` và cần cài theo hệ điều hành đang sử dụng
 -  Sau khi tải về thành công sẽ được một file có dạng `openjfx-15-***.zip` (*** là tên hệ điều hành)
@@ -37,7 +37,7 @@
     ![JavaFx_Download](images/javafx-download.png)
 
 ## 3. Làm quen với JavaFx
-### 3.1 Các thành phần cơ sở của JavaFx
+### 3.1 Các thuật ngữ sử dụng của JavaFx
 
 - **Stage** (Window) là khung chứa tất cả các đối tượng của một ứng dụng, hay chúng ta có thể hiểu Stage là cửa sổ ngoài cùng của một giao diện 
 - **Scene** là thành phần được đặt nằm trong Stage và là thành phần chứa các đối tượng cụ thể như Button, Layout,.. . Mỗi scene thì được gắn với duy nhất một Stage
