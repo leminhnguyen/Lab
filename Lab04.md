@@ -14,14 +14,14 @@
 - Download Eclipse tại: [download eclipse 2020-9](https://www.eclipse.org/downloads/packages/release/2020-09/r)
 - Lưu ý download bản `Eclipse IDE for Enterprise Java Developers` để có đầy đủ các tính năng
   
-  ![](java-dev.png)
+  ![](images/java-dev.png)
   
 ### 2.3 Download Javafx SDK:
 -  Bản mới nhất hiện tại là version 15, có thể download tại [download link](https://gluonhq.com/products/javafx/)
 -  Lưu ý cài các bản có chữ `SDK` ở cuối của cột `Product` và cần cài theo hệ điều hành đang sử dụng
 -  Sau khi tải về thành công sẽ được một file có dạng `openjfx-15-***.zip` (*** là tên hệ điều hành)
   
-    ![JavaFx_Download](javafx-download.png)
+    ![JavaFx_Download](images/javafx-download.png)
 
 ## 3. Làm quen với JavaFx
 ### 3.1 Các thành phần cơ sở của JavaFx
@@ -30,7 +30,7 @@
 - **Scene** là thành phần được đặt nằm trong Stage và là thành phần chứa các đối tượng cụ thể như Button, Layout,.. . Mỗi scene thì được gắn với duy nhất một Stage
 - **Node** là các đối tượng cụ thể của ứng dụng như: Button, CheckBox, Layout,...
   
-    ![JavaFx_Download](Javafx-stage-scene-node.jpg)
+    ![JavaFx_Download](images/Javafx-stage-scene-node.jpg)
 
 ### 3.2 Các loại packages của JavaFx
 - **javafx.animation:** chứa một tập các class cung cấp các loại animation như: xoay(rotate), dịch chuyển (transition), ..
@@ -50,11 +50,11 @@
      +  `VBox`: là một loại layout dùng để chứa các đối tượng theo hàng dọc
      +  `HBox`: là môt loại layout dùng đê chứa các đối tượng theo hàng ngang 
      
-        ![](2020-10-16-10-42-37.png)
+        ![](images/2020-10-16-10-42-37.png)
 
      +  `Tab Pane`: là một loại Pane và có thêm thanh công cụ bên trên (các tabs)
   
-        ![](2020-10-16-10-18-15.png)
+        ![](images/2020-10-16-10-18-15.png)
 
 - **Controls:**
   - Là các loại đối tượng cụ thể của ứng dụng như: `Button`, `Label`, `ImageView`, `CheckBox`, `ChoiceBox`, `TextField`,.. 
@@ -65,41 +65,41 @@
     - `ChoiceBox`: lựa chọn 1 option duy nhất
     - `TextField`: chứa text
   
-      ![](2020-10-16-11-14-29.png)
+      ![](images/2020-10-16-11-14-29.png)
 
 
 ## 4. Tạo chương trình JavaFx HelloWorld
 - Mở Eclipse, sau đó tạo một Java project với tên `HelloJavaFx` và bên trong `src` folder tạo môt file `HelloJFX.java`
   
-  ![](2020-10-14-20-47-04.png)
+  ![](images/2020-10-14-20-47-04.png)
 
 - Tạo một thư mục `lib` cùng cấp với thư mục `src`, thư mục `lib` được tạo ra với mục đích chứa các thư viện được sử dụng ở trong project nhằm giúp cho thuận tiện cho việc quản lý các dependencies cho cá nhân và các thành viên trong project
 - Giải nén file zip JavaFx JDK đã tải từ các bước bên trên vào thư mục `lib`
   
-  ![](2020-10-16-11-38-14.png)
+  ![](images/2020-10-16-11-38-14.png)
 
 - Click chuột phải vào Project > Build Path > Configure Build Path
 
-  ![](2020-10-16-13-55-16.png)
+  ![](images/2020-10-16-13-55-16.png)
 
 - Click chuột lên `Modulepath` hoặc `Classpath` > Add Library > User Library > click `Next` > User Libraries
 
-  ![](2020-10-16-14-02-18.png)
+  ![](images/2020-10-16-14-02-18.png)
 
 - Click `New` > Nhập user library name là `javafx` > click `Ok`
 
-  ![](2020-10-16-14-07-50.png)
+  ![](images/2020-10-16-14-07-50.png)
 
 - Click `Add External JARs`
 - Browse đến thư mục `lib` của project có chứa JavaFx JDK đã giải nén và vào tiếp đến thư mục `lib` của JavaFx JDK
 - Chọn hết tất cả các file jar
 
-  ![](2020-10-16-14-17-32.png)
+  ![](images/2020-10-16-14-17-32.png)
 
-- Click Open > Apply and Close > Tick và javafx > Finish > Apply and Close
+- Click Open > Apply and Close > Tick chọn `javafx` > Finish > Apply and Close
 - Nếu thực hiện các bước trên thành công thì sẽ được kết quả như bên dưới
 
-  ![](2020-10-16-14-16-18.png)
+  ![](images/2020-10-16-14-16-18.png)
 
 - Đến đây thì bạn có thể lập trình ứng dụng JavaFx HelloWorld mà không bị lỗi compile do thiếu thư viện
 - Paste đoạn code dưới đây vào Eclipse
@@ -131,7 +131,7 @@
   ```
 - Đến đây nếu bạn bấm Run thì chương trình chương trình vẫn chưa thể chạy ứng dụng thành công và báo lỗi sau đây
   
-  ![](2020-10-16-14-37-14.png)
+  ![](images/2020-10-16-14-37-14.png)
 
 - Để có thể thực hiện chạy chương trình thành công thì cần thêm một bước config
 - Tiếp theo Click và `Run` > Run Config > Vào tab `Arguments` 
@@ -141,7 +141,7 @@
   ```
 - Bấm `Run` và xem kết quả
   
-  ![](2020-10-16-14-48-31.png)
+  ![](images/2020-10-16-14-48-31.png)
 
 - Lưu ý là mình đang dùng hệ điều hành linux nên tên folder JavaFx JDK và đường dẫn đến thư mục `lib` khác một chút so với Mac và Window. Các bạn điều chỉnh lại một chút theo hệ điều hành mình dùng
 - Đến đây thì bạn đã có thể compile và run chương trình một cách thành công ^-^
