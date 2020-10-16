@@ -27,7 +27,7 @@
 - Download Eclipse tại: [download eclipse 2020-9](https://www.eclipse.org/downloads/packages/release/2020-09/r)
 - Lưu ý download bản `Eclipse IDE for Enterprise Java Developers` để có đầy đủ các tính năng
   
-  ![](2020-10-16-15-02-30.png)
+  ![](images/2020-10-16-15-02-30.png)
   
 ### 2.3 Download Javafx SDK
 -  Bản mới nhất hiện tại là version 15, có thể download tại [download link](https://gluonhq.com/products/javafx/)
