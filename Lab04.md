@@ -68,11 +68,82 @@
       ![](2020-10-16-11-14-29.png)
 
 
-### 3.2 Tạo chương trình JavaFx HelloWorld
+## 4. Tạo chương trình JavaFx HelloWorld
 - Mở Eclipse, sau đó tạo một Java project với tên `HelloJavaFx` và bên trong `src` folder tạo môt file `HelloJFX.java`
   
   ![](2020-10-14-20-47-04.png)
 
 - Tạo một thư mục `lib` cùng cấp với thư mục `src`, thư mục `lib` được tạo ra với mục đích chứa các thư viện được sử dụng ở trong project nhằm giúp cho thuận tiện cho việc quản lý các dependencies cho cá nhân và các thành viên trong project
-I'm VBox
-  ![](2020-10-14-20-54-12.png)
+- Giải nén file zip JavaFx JDK đã tải từ các bước bên trên vào thư mục `lib`
+  
+  ![](2020-10-16-11-38-14.png)
+
+- Click chuột phải vào Project > Build Path > Configure Build Path
+
+  ![](2020-10-16-13-55-16.png)
+
+- Click chuột lên `Modulepath` hoặc `Classpath` > Add Library > User Library > click `Next` > User Libraries
+
+  ![](2020-10-16-14-02-18.png)
+
+- Click `New` > Nhập user library name là `javafx` > click `Ok`
+
+  ![](2020-10-16-14-07-50.png)
+
+- Click `Add External JARs`
+- Browse đến thư mục `lib` của project có chứa JavaFx JDK đã giải nén và vào tiếp đến thư mục `lib` của JavaFx JDK
+- Chọn hết tất cả các file jar
+
+  ![](2020-10-16-14-17-32.png)
+
+- Click Open > Apply and Close > Tick và javafx > Finish > Apply and Close
+- Nếu thực hiện các bước trên thành công thì sẽ được kết quả như bên dưới
+
+  ![](2020-10-16-14-16-18.png)
+
+- Đến đây thì bạn có thể lập trình ứng dụng JavaFx HelloWorld mà không bị lỗi compile do thiếu thư viện
+- Paste đoạn code dưới đây vào Eclipse
+
+  ```java
+    import javafx.application.Application;
+    import javafx.scene.Scene;
+    import javafx.scene.control.Label;
+    import javafx.scene.layout.StackPane;
+    import javafx.stage.Stage;
+
+    public class HelloJFX extends Application {
+
+        @Override
+        public void start(Stage stage) {
+            String javaVersion = System.getProperty("java.version");
+            String javafxVersion = System.getProperty("javafx.version");
+            Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+            Scene scene = new Scene(new StackPane(l), 640, 480);
+            stage.setScene(scene);
+            stage.show();
+        }
+
+        public static void main(String[] args) {
+            launch();
+        }
+
+    }
+  ```
+- Đến đây nếu bạn bấm Run thì chương trình chương trình vẫn chưa thể chạy ứng dụng thành công và báo lỗi sau đây
+  
+  ![](2020-10-16-14-37-14.png)
+
+- Để có thể thực hiện chạy chương trình thành công thì cần thêm một bước config
+- Tiếp theo Click và `Run` > Run Config > Vào tab `Arguments` 
+- Paste đoạn text dưới đây vào `VM arguments`
+  ```
+  --module-path lib/openjfx-15_linux-x64_bin-sdk/javafx-sdk-15/lib/ --add-modules javafx.controls,javafx.fxml
+  ```
+- Bấm `Run` và xem kết quả
+  
+  ![](2020-10-16-14-48-31.png)
+
+- Lưu ý là mình đang dùng hệ điều hành linux nên tên folder JavaFx JDK và đường dẫn đến thư mục `lib` khác một chút so với Mac và Window. Các bạn điều chỉnh lại một chút theo hệ điều hành mình dùng
+- Đến đây thì bạn đã có thể compile và run chương trình một cách thành công ^-^
+
+### P/S: Vậy đến đây là chúng ta đã kết thúc việc làm quen với JavaFX và chạy được một chương trình Hello World JavaFX đơn giản, cũng không khó lắm nhỉ :wink:. Chúc các bạn học tập chăm chỉ và thành công.
