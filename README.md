@@ -1,4 +1,4 @@
-# JavaFx Guidlines
+# JavaFx Guidelines
 
 ## Table Of Contents
   - [1. Tổng quan về JavaFx](#1-tổng-quan-về-javafx)
